@@ -31,20 +31,20 @@ const Home: NextPage = () => {
         </div>
         <p className='font-light text-2xl '>Feed your soul, Feed someone</p>
       {
-        session?null:
+        session?<div className='h-40'/>:
         <div className='m-10'> 
         <Button color='secondary' variant='outlined' size='large'>Login!</Button>
          </div>
       }
       </div>
       <div className='bg-gray-300 p-10 flex flex-row justify-evenly text-xl'>
-      <div className='bg-red-500 w-fit pt-5 pb-5 pl-10 pr-10 cursor-pointer' onClick={()=>{router.push('/Aboutus')}}>
+      <div className='bg-red-500 w-fit pt-5 pb-5 pl-10 pr-10 cursor-pointer rounded' onClick={()=>{router.push('/Aboutus')}}>
           About us
         </div> 
-        <div className='bg-red-500 w-fit pt-5 pb-5 pl-10 pr-10 cursor-pointer' onClick={()=>{router.push('/Donate')}}>
+        <div className='bg-red-500 w-fit pt-5 pb-5 pl-10 pr-10 cursor-pointer rounded' onClick={()=>{router.push('/Donate')}}>
           Donate Food
         </div> 
-        <div className='bg-red-500 w-fit pt-5 pb-5 pl-10 pr-10 cursor-pointer' onClick={()=>{router.push('/Accept')}}>
+        <div className='bg-red-500 w-fit pt-5 pb-5 pl-10 pr-10 cursor-pointer rounded' onClick={()=>{router.push('/Accept')}}>
           Find Donations
         </div>
       </div>

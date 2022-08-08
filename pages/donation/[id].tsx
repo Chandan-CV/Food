@@ -32,7 +32,8 @@ function SpecificDonation() {
         pincode: donationData.pincode,
         receiver_email: session?.user?.email,
         receiver_name: session?.user?.name,
-        servings: donationData.servings
+        servings: donationData.servings,
+        donator_phone:donationData.contact
 
       }
       const collectionRef = collection(db, 'Receives')

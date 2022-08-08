@@ -24,7 +24,7 @@ function Donate() {
 
       const uploadData: DonationUpload = {
 
-        city: city,
+        city: city.toLowerCase(),
         contact: phone,
         description: description,
         expiry_date_time: expiryDate,

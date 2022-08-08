@@ -37,7 +37,7 @@ export interface Receive{
     pincode:number|undefined;
     receiver_email: string | null | undefined;
     donator_email:string | null | undefined;
-    
+    donator_phone: number|undefined;
 }
 
 export interface ReceiveDownload{

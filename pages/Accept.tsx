@@ -28,7 +28,7 @@ async function getData() {
         <div className='flex flex-1 flex-row flex-wrap`'>
 
           {data?.map((donation)=>{
-            return <DonationCard donation={donation}/>
+            return <DonationCard donation={donation} key={donation.id}/>
           })}
           </div>
     </div>

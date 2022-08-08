@@ -22,10 +22,6 @@ async function getData() {
         <Navbar/>
         <h1>
           {JSON.stringify(donations)}
-          {donations.map((donation)=>{
-            return <DonationCard/>
-          })}
-
         </h1>
           <p>{JSON.stringify(data)}</p>
     </div>

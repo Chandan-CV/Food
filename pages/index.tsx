@@ -1,6 +1,6 @@
 
 import type { NextPage } from 'next'
-import { useSession } from 'next-auth/react'
+import { signIn, useSession } from 'next-auth/react'
 import Head from 'next/head'
 import Image from 'next/image'
 import Navbar from '../components/Navbar'
@@ -33,7 +33,7 @@ const Home: NextPage = () => {
       {
         session?<div className='h-40'/>:
         <div className='m-10'> 
-        <Button color='secondary' variant='outlined' size='large'>Login!</Button>
+        <Button color='secondary' variant='outlined' size='large' onClick={()=>{signIn()}}>Login!</Button>
          </div>
       }
       </div>

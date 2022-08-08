@@ -37,4 +37,20 @@ export interface Receive{
     pincode:number|undefined;
     receiver_email: string | null | undefined;
     donator_email:string | null | undefined;
+    
+}
+
+export interface ReceiveDownload{
+    city: string
+    donator_name:string | null | undefined
+    receiver_name:string | null | undefined
+    name:string;
+    expiry_date_time:string|null;
+    description:string;
+    made_date_time:string|null;
+    servings:number|undefined;
+    pincode:number|undefined;
+    receiver_email: string | null | undefined;
+    donator_email:string | null | undefined;
+    id:string
 }

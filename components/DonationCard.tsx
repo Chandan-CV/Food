@@ -1,6 +1,6 @@
 import { useRouter } from 'next/router'
 import React from 'react'
-import { DonationDownload, DonationUpload } from '../types'
+import { DonationDownload, DonationUpload, ReceiveDownload } from '../types'
 
 interface Props{
   donation:DonationDownload

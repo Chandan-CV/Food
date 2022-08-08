@@ -16,11 +16,11 @@ const {data:session} = useSession()
                     <div className='flex flex-1 justify-evenly'>
                         <Link href={'/'}>Home</Link>
                         <Link href={'/Aboutus'}>About us</Link>
+                        {session?<>
                         <Link href={'/Donate'}>Donate</Link>
                         <Link href={'/Accept'}>Accept</Link>
                         
-                        {session?
-                        <><Link href={'/MyAccount'}>My Account</Link> 
+                        <Link href={'/MyAccount'}>My Account</Link> 
                         <p onClick={() => { signOut() } } className='cursor-pointer'>logout</p></>
                         :
                         <p onClick={()=>{signIn()}} className='cursor-pointer'>Sign in</p>}

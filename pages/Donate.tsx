@@ -1,4 +1,4 @@
-import { Input, TextField } from '@mui/material'
+import { Button, Input, TextField } from '@mui/material'
 import { useSession } from 'next-auth/react'
 import React, { useState } from 'react'
 import Navbar from '../components/Navbar'
@@ -23,8 +23,8 @@ function Donate() {
       <div>
 
         <Navbar />
-        <h1>Wanting to donate extra food that you know will go waste?</h1>
         <div className='flex flex-col p-10 items-center'>
+        <h1 className='text-2xl font-bold'>Wanting to donate extra food that you know will go waste?</h1>
           <TextField label="name of the dish"
             className='m-5 w-3/4'
             value={name}
@@ -79,6 +79,7 @@ function Donate() {
             value={phone}
             onChange={(e) => { setPhone(parseInt(e.target.value)) }}
             type="number" />
+          <Button variant='outlined' onClick={()=>{}}>Submit</Button>
         </div>
 
       </div>

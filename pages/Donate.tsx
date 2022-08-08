@@ -26,11 +26,13 @@ const router = useRouter()
       city:city,
       contact:phone,
       description:description,
-      expirty_date_time:expiryDate,
+      expiry_date_time:expiryDate,
       made_date_time:startValue,
       name:name,
       servings:servings,
-      user_name: session?.user?.name
+      user_name: session?.user?.name,
+      pincode: pincode,
+      user_email:session?.user?.email
     }
 
     try{

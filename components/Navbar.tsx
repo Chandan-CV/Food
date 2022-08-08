@@ -1,8 +1,9 @@
 import { AppBar, Toolbar } from '@mui/material'
 import Link from 'next/link'
 import React from 'react'
-
+import { useSession, signIn, signOut } from "next-auth/react"
 function Navbar() {
+const {data:session} = useSession()
 
     return (
         <AppBar position='sticky'>
@@ -17,6 +18,11 @@ function Navbar() {
                         <Link href={'/Aboutus'}>About us</Link>
                         <Link href={'/Donate'}>Donate</Link>
                         <Link href={'/Accept'}>Accept</Link>
+                        {session?
+                        <p onClick={()=>{signOut()}} className='cursor-pointer'>logout</p>
+                        :
+                        <p onClick={()=>{signIn()}} className='cursor-pointer'>Sign in</p>}
+                    
                     </div>
                 </div>
             </Toolbar>

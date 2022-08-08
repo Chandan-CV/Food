@@ -11,7 +11,7 @@ const {data:session} = useSession()
                 <div className='flex flex-1 justify-between'>
                     <div className='flex flex-1'>
 
-                    <h1>Anna Brahma</h1>
+                    <h1 className='font-Goblin text-xl'>Anna Brahma</h1>
                      </div>
                     <div className='flex flex-1 justify-evenly'>
                         <Link href={'/'}>Home</Link>

@@ -57,22 +57,27 @@ function Donate() {
         <Navbar />
         <div className='flex flex-col p-10 items-center'>
           <h1 className='text-2xl font-bold'>Wanting to donate extra food that you know will go waste?</h1>
+          <div className='h-5'/>
           <TextField label="Name of the dish"
             color='secondary'
 
-            className='m-5 w-3/4'
+            className='w-3/4'
             value={name}
             onChange={(e) => { setName(e.target.value) }}
           />
+          <div className='h-5'/>
+          
           <TextField label="Description"
             color='secondary'
-            className='m-5 w-3/4'
+            className='w-3/4'
             value={description}
             onChange={(e) => { setDescription(e.target.value) }}
           />
+          <div className='h-5'/>
+
           <TextField label="Number of servings" type={"number"}
             color='secondary'
-            className='m-5 w-3/4'
+            className='w-3/4'
             value={servings}
             onChange={(e) => { setServings(parseInt(e.target.value)) }} />
           <div className='flex flex-1 flex-row'>
@@ -99,26 +104,33 @@ function Donate() {
 
           </div>
           <p className='text-xl font-bold'>Address</p>
+          <div className='h-5'/>
+          
           <TextField label='City'
             color='secondary'
 
-            className='m-5 w-3/4'
+            className='w-3/4'
             value={city}
             onChange={(e) => { setCity(e.target.value) }} />
+          <div className='h-5'/>
 
           <TextField label='Pincode' type={"number"}
             color='secondary'
 
-            className='m-5 w-3/4'
+            className=' w-3/4'
             value={pincode}
             onChange={(e) => { setPincode(parseInt(e.target.value)) }} />
+          <div className='h-5'/>
+          
           <TextField label="Contact number"
             color='secondary'
 
-            className='m-5 w-3/4'
+            className='w-3/4'
             value={phone}
             onChange={(e) => { setPhone(parseInt(e.target.value)) }}
             type="number" />
+          <div className='h-5'/>
+
           <Button variant='outlined' onClick={() => { handleSubmit() }} color='secondary'>Submit</Button>
           <Image src={logo}/>
         </div>

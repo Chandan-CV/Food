@@ -16,9 +16,9 @@ function AcceptCard({receive}:Props) {
         <h1>{`acceptor contact: ${receive.receiver_email}`}</h1>
         <h1>{`donator contact: ${receive.donator_email}`}</h1>
         <h1>{`servings: feeds ${receive.servings} people`}</h1>
-        <h1>date prepared:{` ${receive.made_date_time?.split("T")[0]}`}</h1>
+        <h1>Date prepared:{` ${receive.made_date_time?.split("T")[0]}`}</h1>
         <h1>{`time prepared: ${receive.made_date_time?.split("T")[1]}`}</h1> 
-        <h1>expiry date:{` ${receive.expiry_date_time?.split("T")[0]}`}</h1>
+        <h1>Expiry date:{` ${receive.expiry_date_time?.split("T")[0]}`}</h1>
         <h1>{`approx time: ${receive.expiry_date_time?.split("T")[1]}`}</h1>
     </div>
   )

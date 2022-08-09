@@ -21,7 +21,7 @@ const {data:session} = useSession()
                         <Link href={'/Accept'}>Accept</Link>
                         
                         <Link href={'/MyAccount'}>My Account</Link> 
-                        <p onClick={() => { signOut() } } className='cursor-pointer'>logout</p></>
+                        <p onClick={() => { signOut() } } className='cursor-pointer'>Logout</p></>
                         :
                         <p onClick={()=>{signIn()}} className='cursor-pointer'>Sign in</p>}
                     

@@ -27,7 +27,7 @@ function Accept() {
 
       <h1 className='text-3xl'>Looking for donated food?</h1>
       <div className='mt-10 flex flex-1'>
-        <TextField label="enter city" color='secondary'  type={"search"}value={city} onChange={(e)=>{setCity(e.target.value.toLowerCase())}} />
+        <TextField label="Enter a city" color='secondary'  type={"search"}value={city} onChange={(e)=>{setCity(e.target.value.toLowerCase())}} />
         <Button color='secondary' onClick={()=>{getData()}}>search</Button>
       </div>
       <div className='flex flex-1 flex-row flex-wrap`'>

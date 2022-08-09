@@ -26,7 +26,7 @@ const Home: NextPage = () => {
           </div>
               <Image src={logo}/>
               <div className='w-auto ml-52 mr-10'>
-              <h1 className='text-xl text-right justify-self-end font-light'>Let us together, Bridge the gap between the Fortunate and the Needy</h1>
+              <h1 className='text-xl text-right justify-self-end font-light'>Let us bridge the gap between the fortunate and the needy together</h1>
                </div>
         </div>
         <p className='font-light text-2xl '>Feed your soul, Feed someone</p>

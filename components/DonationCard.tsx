@@ -13,9 +13,9 @@ function DonationCard({donation}:Props) {
         <h1 className='text-2xl font-bold'>{donation.name}</h1>
         <h1>{`by ${donation.user_name}`}</h1>
         <h1>{`servings: feeds ${donation.servings} people`}</h1>
-        <h1>date prepared:{` ${donation.made_date_time?.split("T")[0]}`}</h1>
+        <h1>Date prepared:{` ${donation.made_date_time?.split("T")[0]}`}</h1>
         <h1>{`time prepared: ${donation.made_date_time?.split("T")[1]}`}</h1> 
-        <h1>expiry date:{` ${donation.expiry_date_time?.split("T")[0]}`}</h1>
+        <h1>Expiry date:{` ${donation.expiry_date_time?.split("T")[0]}`}</h1>
         <h1>{`approx time: ${donation.expiry_date_time?.split("T")[1]}`}</h1>
     </div>
   )

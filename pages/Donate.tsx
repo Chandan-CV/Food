@@ -38,14 +38,14 @@ function Donate() {
 
       try {
         const docRef = await addDoc(collection(db, 'Donations'), uploadData)
-        alert("done submitting")
+        alert("Submitted")
         router.replace("/")
       } catch (e) {
         alert(e)
       }
     }
     else {
-      alert("all the fields are not filled")
+      alert("All the fields are not filled. Please fill the remaining fields.")
     }
   }
 
@@ -57,7 +57,7 @@ function Donate() {
         <Navbar />
         <div className='flex flex-col p-10 items-center'>
           <h1 className='text-2xl font-bold'>Wanting to donate extra food that you know will go waste?</h1>
-          <TextField label="name of the dish"
+          <TextField label="Name of the dish"
             color='secondary'
 
             className='m-5 w-3/4'
@@ -70,7 +70,7 @@ function Donate() {
             value={description}
             onChange={(e) => { setDescription(e.target.value) }}
           />
-          <TextField label="number of servings" type={"number"}
+          <TextField label="Number of servings" type={"number"}
             color='secondary'
             className='m-5 w-3/4'
             value={servings}
@@ -78,7 +78,7 @@ function Donate() {
           <div className='flex flex-1 flex-row'>
 
             <div className='m-5 w-3/4'>
-              <p>when was it made?</p>
+              <p>When was it made?</p>
               <TextField type={"datetime-local"}
                 color='secondary'
 
@@ -106,13 +106,13 @@ function Donate() {
             value={city}
             onChange={(e) => { setCity(e.target.value) }} />
 
-          <TextField label='pincode' type={"number"}
+          <TextField label='Pincode' type={"number"}
             color='secondary'
 
             className='m-5 w-3/4'
             value={pincode}
             onChange={(e) => { setPincode(parseInt(e.target.value)) }} />
-          <TextField label="contact number"
+          <TextField label="Contact number"
             color='secondary'
 
             className='m-5 w-3/4'

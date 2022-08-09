@@ -54,8 +54,8 @@ if(session){
         null
         }
         <Image src={logo}/>
-        <h1>name: {session.user?.name}</h1>
-        <h1>email: {session.user?.email}</h1>
+        <h1 style = {{margin-bottom:"10px"}}> Name: {session.user?.name}</h1>
+        <h1>Email: {session.user?.email}</h1>
           <p className='text-2xl font-bold mt-10'>Food Accepted</p>
         <div className='flex flex-1 flex-wrap flex-row justify-center items-center'>
         {

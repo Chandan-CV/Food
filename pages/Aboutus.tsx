@@ -17,6 +17,7 @@ function Aboutus() {
               <div className='h-4' />
               <h1 className='font-Goblin text-6xl'>ANNA BRAHMA?</h1>
             </div>
+            <Image src={logo}/>
 
           </div>
           <div className='w-2/3'>

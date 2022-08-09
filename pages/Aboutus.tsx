@@ -21,12 +21,11 @@ function Aboutus() {
           </div>
           <div className='w-2/3'>
             <div className='h-5' />
-            <p className=' text-2xl '>Have humongous amount of food left untouched at your birthday or wedding? Donate it to the less fortunate through Anna Brahma</p>
+            <p className=' text-lg mb-3'>Do you know that one-third of all food globally goes to waste? That's enough to feed 3 billion people! If food waste were a country it would be the third-largest greenhouse gas emitter on the planet! If we all stop wasting edible food, it would be the equivalent of taking one in four cars off the road. As per one data, even in India where countless people sleep hungry, the average person wastes 137 grams of food every single day. That's a whooping 50 kg per year. </p>
+            <p className=' text-lg mb-3'>Production of food creates an impact on land, water, air and human effort such as producing, processing, transporting and storing the food. When that food is wasted, all the resources used are wasted as well. This takes a heavy toll on our environment.</p>
+            <p className=' text-lg mb-3'>Anna Brahma has made it's mission to bring food to those who need it. We aim reduce food wastage and strive to create a society where not even a single morsel goes to waste. We hope to a pave the way for a better future where no person is hungry. We also aim to make a sustainable society by  unnecessary food production, reducing carbon emissions and conserving our resources.</p>
           </div>
-
-
           <div className='mt-20 flex flex-row justify-between'>
-
             <div className='w-1/4'>
               <h1 className='text-2xl font-bold'>Donate Extra Food</h1>
               <div className='h-2' />
